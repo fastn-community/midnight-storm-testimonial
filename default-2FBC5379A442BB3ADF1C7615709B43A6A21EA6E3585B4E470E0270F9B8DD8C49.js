@@ -1337,6 +1337,10 @@ class Node2 {
         }
     }
     updateParentPosition(value) {
+        if (ssr) {
+            let parent = this.#parent;
+            if (parent.style) parent.style["position"] = value;
+        }
         if (!ssr) {
             let current_node = this.#node;
             if (current_node) {
@@ -3931,7 +3935,7 @@ window.ftd = ftd;
 
 ftd.toggle = function (args) {
   let __fastn_super_package_name__ = __fastn_package_name__;
-  __fastn_package_name__ = "__user_name___github_io___repo_name__";
+  __fastn_package_name__ = "fastn_community_github_io_midnight_storm_testimonial";
   try {
     let __args__ = args;
     let fastn_utils_val___args___a = fastn_utils.clone(!fastn_utils.getter(__args__.a));
@@ -3947,7 +3951,7 @@ ftd.toggle = function (args) {
 }
 ftd.increment = function (args) {
   let __fastn_super_package_name__ = __fastn_package_name__;
-  __fastn_package_name__ = "__user_name___github_io___repo_name__";
+  __fastn_package_name__ = "fastn_community_github_io_midnight_storm_testimonial";
   try {
     let __args__ = args;
     let fastn_utils_val___args___a = fastn_utils.clone(fastn_utils.getter(__args__.a) + 1);
@@ -3963,7 +3967,7 @@ ftd.increment = function (args) {
 }
 ftd.increment_by = function (args) {
   let __fastn_super_package_name__ = __fastn_package_name__;
-  __fastn_package_name__ = "__user_name___github_io___repo_name__";
+  __fastn_package_name__ = "fastn_community_github_io_midnight_storm_testimonial";
   try {
     let __args__ = args;
     let fastn_utils_val___args___a = fastn_utils.clone(fastn_utils.getter(__args__.a) + fastn_utils.getter(__args__.v));
@@ -3979,7 +3983,7 @@ ftd.increment_by = function (args) {
 }
 ftd.enable_light_mode = function (args) {
   let __fastn_super_package_name__ = __fastn_package_name__;
-  __fastn_package_name__ = "__user_name___github_io___repo_name__";
+  __fastn_package_name__ = "fastn_community_github_io_midnight_storm_testimonial";
   try {
     let __args__ = args;
     return (enable_light_mode());
@@ -3989,7 +3993,7 @@ ftd.enable_light_mode = function (args) {
 }
 ftd.enable_dark_mode = function (args) {
   let __fastn_super_package_name__ = __fastn_package_name__;
-  __fastn_package_name__ = "__user_name___github_io___repo_name__";
+  __fastn_package_name__ = "fastn_community_github_io_midnight_storm_testimonial";
   try {
     let __args__ = args;
     return (enable_dark_mode());
@@ -3999,7 +4003,7 @@ ftd.enable_dark_mode = function (args) {
 }
 ftd.enable_system_mode = function (args) {
   let __fastn_super_package_name__ = __fastn_package_name__;
-  __fastn_package_name__ = "__user_name___github_io___repo_name__";
+  __fastn_package_name__ = "fastn_community_github_io_midnight_storm_testimonial";
   try {
     let __args__ = args;
     return (enable_system_mode());
@@ -4009,7 +4013,7 @@ ftd.enable_system_mode = function (args) {
 }
 ftd.set_bool = function (args) {
   let __fastn_super_package_name__ = __fastn_package_name__;
-  __fastn_package_name__ = "__user_name___github_io___repo_name__";
+  __fastn_package_name__ = "fastn_community_github_io_midnight_storm_testimonial";
   try {
     let __args__ = args;
     let fastn_utils_val___args___a = fastn_utils.clone(__args__.v);
@@ -4025,7 +4029,7 @@ ftd.set_bool = function (args) {
 }
 ftd.set_boolean = function (args) {
   let __fastn_super_package_name__ = __fastn_package_name__;
-  __fastn_package_name__ = "__user_name___github_io___repo_name__";
+  __fastn_package_name__ = "fastn_community_github_io_midnight_storm_testimonial";
   try {
     let __args__ = args;
     let fastn_utils_val___args___a = fastn_utils.clone(__args__.v);
@@ -4041,7 +4045,7 @@ ftd.set_boolean = function (args) {
 }
 ftd.set_string = function (args) {
   let __fastn_super_package_name__ = __fastn_package_name__;
-  __fastn_package_name__ = "__user_name___github_io___repo_name__";
+  __fastn_package_name__ = "fastn_community_github_io_midnight_storm_testimonial";
   try {
     let __args__ = args;
     let fastn_utils_val___args___a = fastn_utils.clone(__args__.v);
@@ -4057,7 +4061,7 @@ ftd.set_string = function (args) {
 }
 ftd.set_integer = function (args) {
   let __fastn_super_package_name__ = __fastn_package_name__;
-  __fastn_package_name__ = "__user_name___github_io___repo_name__";
+  __fastn_package_name__ = "fastn_community_github_io_midnight_storm_testimonial";
   try {
     let __args__ = args;
     let fastn_utils_val___args___a = fastn_utils.clone(__args__.v);
