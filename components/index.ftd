@@ -59,9 +59,6 @@ border-radius.px: 20
 height.fixed.px: 430
 padding.px: 50
 
--- ftd.image: $assets.files.images.dbl-qoutes.svg
-align-self: start
-
 -- ftd.text: $testimonials-card-desktop.title
 if: { testimonials-card-desktop.title != NULL }
 role: $inherited.types.heading-small
@@ -78,7 +75,7 @@ index: $LOOP.COUNTER
 $current-slide: $testimonials-card-desktop.current-slide
 
 -- ftd.row:
-spacing.fixed.px: 4
+spacing.fixed.px: 12
 
 
 -- nav-lists:
